@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATION </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <h1 class=" text-center py-3 shadow">CRUD OPERATION</h1>
+
+<div class=" w-75 py-5 m-auto">
+
+<label for="pn" class="py-2">Product Name:</label>
+<input type="text" id="pn" class=" form-control shadow" placeholder="Product Name" >
+
+<label for="pr" class="py-2 ">Product Price:</label>
+<input type="number" id="pr" class=" form-control shadow"placeholder="Product Price" >
+
+
+<label for="pc" class="py-2 ">Product Category:</label>
+<input type="text" id="pc" class=" form-control shadow" placeholder="Product Category" >
+
+<label for="pd" class="py-2 ">Product Description:</label>
+<textarea name="" id="pd" class=" form-control shadow" placeholder="Description"></textarea>
+
+<button onclick="addProduct ()"  id="up" class=" btn btn-danger m-2 shadow "> Add </button>
+</div>
+
+<div class=" w-75 m-auto pb-5 ">
+    <label for="se" class="py-2">Search:</label>
+    <input type="text" onkeyup="search(this.value)" id="se" class="form-control shadow " placeholder="Search......" >
+</div>
+
+<div class=" w-75 mx-auto">
+    <table class=" table shadow">
+        
+            <thead>
+                <tbody>
+                <tr>
+                    <th>Index</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Category</th>
+                    <th>Product Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>  
+                </tr>
+            </thead>
+            <tbody id="td">
+           
+        </tbody>
+
+    </table>
+ 
+
+</div>
+
+
+
+
+
+
+
+
+<script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
